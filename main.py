@@ -25,7 +25,18 @@ def afficher_taches():
         print(f"{i + 1}. {taches[i]}")
     print(f"Total : {len(taches)} tâche(s)")
 
-
+def recherche():
+    mot = input("Donner votre mot clé : ").strip().lower()
+    if mot == "":
+        print("Erreur : mot clé non valide")
+        return
+    ok = False
+    for i in range(len(liste)):
+        if mot in liste[i].lower():
+            print(f"{i + 1}. {liste[i]}")
+            ok = True
+    if not ok:
+        print("Aucune tâche trouvée.")
 
 
 def main():
