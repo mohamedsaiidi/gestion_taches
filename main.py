@@ -1,4 +1,3 @@
-"""Application console de gestion des tâches (Partie 1)."""
 
 taches = []  
 
